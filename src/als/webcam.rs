@@ -13,7 +13,7 @@ use v4l::video::Capture;
 use v4l::{Device, FourCC};
 
 const DEFAULT_LUX: u64 = 100;
-const WAITING_SLEEP_MS: u64 = 2000;
+const WAITING_SLEEP_MS: u64 = 10000;
 
 pub struct Webcam {
     webcam_tx: Sender<u64>,
